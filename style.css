@@ -1,0 +1,95 @@
+body {
+    background-image: url('assets/CiclopeFundo.jpg');
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    box-sizing: border-box;
+}
+#header {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px 10px;
+    padding: 80px;
+    border-radius: 10px;
+    border: 6px solid black;
+}
+body h1 {
+    font-family: 'Sekuya', sans-serif;
+    text-align: center;
+    color: white;
+}
+body h2 {
+    font-family: 'Roboto', bold, sans-serif;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+#content {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 10px;
+    background-color: rgba(253, 207, 2, 0.8);
+    margin-top: 50px;
+    padding: 30px;
+    border: 3px solid black;
+}
+#powerHabilities {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 10px;
+    background-color: rgba(179, 0, 0, 0.8);
+    margin-top: 50px;
+    padding: 30px;
+    border: 3px solid black;
+}
+#powerHabilities p {
+    font-family: 'Roboto', bold, sans-serif;
+    font-size: 36px;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+#gallery {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-top: 50px;
+    padding: 30px;
+    border: 3px solid black;
+}
+#gallery img {
+    width: 100%;
+    height: auto;
+    margin: 10px;
+    border: 3px solid white;
+}
+#footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 0%;
+    
+}
