@@ -13,6 +13,9 @@ body {
     background-attachment: fixed;
     box-sizing: border-box;
 }
+#header:hover {
+    background-color: var(--color-main);
+}
 #header {
     font-family: 'Roboto', sans-serif;
     text-align: center;
