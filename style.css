@@ -1,5 +1,5 @@
 :root {
-    --color-main: rgba(237, 6, 6, 0.887);
+    --color-main: #b30000cc;
     --color-yellow: rgb(242, 255, 0);
     --color-blue: rgba(0, 26, 255, 0.924);
 }
@@ -44,7 +44,7 @@ body h2 {
     align-items: center;
     margin: auto;
     border-radius: 10px;
-    background-color: rgba(253, 207, 2, 0.8);
+    background-color: var(--color-yellow);
     margin-top: 50px;
     padding: 30px;
     border: 3px solid black;
@@ -57,7 +57,7 @@ body h2 {
     align-items: center;
     margin: auto;
     border-radius: 10px;
-    background-color: rgba(179, 0, 0, 0.8);
+    background-color: #b30000cc;
     margin-top: 50px;
     padding: 30px;
     border: 3px solid black;
