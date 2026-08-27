@@ -40,6 +40,11 @@ body h2 {
     color: white;
     margin-top: 20px;
 }
+#content::first-letter {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--color-main);
+}
 #content {
     font-family: 'Roboto', sans-serif;
     display: flex;
