@@ -2,6 +2,7 @@
     --color-main: #b30000cc;
     --color-yellow: rgb(242, 255, 0);
     --color-blue: rgba(0, 26, 255, 0.924);
+    --color-yellow-dark: rgb(255, 255, 0);
 }
 body {
     background-image: url('assets/CiclopeFundo.jpg');
