@@ -44,18 +44,20 @@
             <img src="assets/ciclope5.jpg" alt="Ciclope em cartão destaque">
         </div>
         <script>
-            //Qual X-Men favorito (Pegar o input e o botão do HTML)
-             
+            //Seleção de X-Men favorito.
+
             const xMenFavorite = document.querySelector("#question input")
             const submitBtn = document.querySelector("#question button")
             console.log(xMenFavorite.value)
             submitBtn.addEventListener("click", () => {
-                const favorite = xMenFavorite.value.trim();
-                if (favorite) {
-                    alert(`Seu X-Men favorito é: ${favorite}`);
+                const favorite = xMenFavorite.value.trim().toLowerCase();
+                if (favorite != "ciclope") {
+                    alert(`Seu X-Men favorito é: ${favorite}? Que legal! Mas essa página é dedicada ao Ciclope, mas deve ter alguma página de ${favorite} por aí!!`);
                 } else {
-                    alert("Por favor, insira o nome de um X-Men.");
+                    alert("Essa página é dedicada ao Ciclope, então você veio ao lugar certo!");
                 }
+            });
+
             // Rodapé de imagens da galeria 
 
             const images = document.querySelectorAll('.image-container img');
@@ -81,8 +83,7 @@
             showImage(currentIndex);
 
             // Tempo para passar até a próxima imagem 
-            setInterval(nextImage, 5000);
-
+            setInterval(nextImage, 3000);;
         </script>
     </div>
     <div id="footer">
