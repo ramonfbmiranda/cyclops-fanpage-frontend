@@ -17,6 +17,11 @@
         <h1>Scott Summers | Ciclope</h1>
         <h2>"A mim, meus X-Men"</h2>
     </div>
+    <div id="question">
+        <input type="text" id="xMenFavorite" placeholder="Qual seu X-Men favorito?">
+        <button id="submitBtn">Enviar</button>
+    </div>
+
     <div id="content">
         <p>Scott Summers, conhecido pelo nome de Ciclope, é um personagem fictício que aparece na série de quadrinhos da Marvel Comics. Ele é membro dos X-Men e possui o poder de emitir raios de energia por seus olhos. Pode-se dizer que é o membro mais importante de todo o contexto dos X-Men, tendo em vista que foi o membro que apareceu em mais edições, além de ser o líder mais consistente da equipe.</p>
     </div>
@@ -39,6 +44,18 @@
             <img src="assets/ciclope5.jpg" alt="Ciclope em cartão destaque">
         </div>
         <script>
+            //Qual X-Men favorito (Pegar o input e o botão do HTML)
+             
+            const xMenFavorite = document.querySelector("#question input")
+            const submitBtn = document.querySelector("#question button")
+            console.log(xMenFavorite.value)
+            submitBtn.addEventListener("click", () => {
+                const favorite = xMenFavorite.value.trim();
+                if (favorite) {
+                    alert(`Seu X-Men favorito é: ${favorite}`);
+                } else {
+                    alert("Por favor, insira o nome de um X-Men.");
+                }
             // Rodapé de imagens da galeria 
 
             const images = document.querySelectorAll('.image-container img');
@@ -65,7 +82,7 @@
 
             // Tempo para passar até a próxima imagem 
             setInterval(nextImage, 5000);
-            
+
         </script>
     </div>
     <div id="footer">
