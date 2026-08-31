@@ -1,7 +1,6 @@
 // SEÇÃO JAVASCRIPT
 
 //Seleção de X-Men favorito.
-
 const xMenFavorite = document.querySelector("#question input")
 const submitBtn = document.querySelector("#question button")
 console.log(xMenFavorite.value)
@@ -13,7 +12,6 @@ submitBtn.addEventListener("click", () => {
         alert("Essa página é dedicada ao Ciclope, então você veio ao lugar certo!");
     }
 });
-o 
 // Rodapé de imagens da galeria 
 
 const images = document.querySelectorAll('.image-container img');
@@ -39,4 +37,4 @@ function previousImage() {
 showImage(currentIndex);
 
 // Tempo para passar até a próxima imagem 
-setInterval(nextImage, 3000);;
+setInterval(nextImage, 3000);
