@@ -38,3 +38,11 @@ showImage(currentIndex);
 
 // Tempo para passar até a próxima imagem 
 setInterval(nextImage, 3000);
+
+// NOVA IMPLEMENTAÇÃO: Adicionando botões de navegação para a galeria de imagens
+
+const nextButton = document.querySelector('.next-button');
+const prevButton = document.querySelector('.prev-button');
+nextButton.addEventListener('click', nextImage);
+prevButton.addEventListener('click', previousImage);
+
