@@ -33,16 +33,37 @@ function previousImage() {
     showImage(currentIndex);
 }
 
-// Valor da primeira imagem
 showImage(currentIndex);
 
-// Tempo para passar até a próxima imagem 
-setInterval(nextImage, 3000);
-
-// NOVA IMPLEMENTAÇÃO: Adicionando botões de navegação para a galeria de imagens
+let intervalId = setInterval(nextImage, 4000);
+let pausado = false;
 
 const nextButton = document.querySelector('.next-button');
 const prevButton = document.querySelector('.prev-button');
-nextButton.addEventListener('click', nextImage);
-prevButton.addEventListener('click', previousImage);
+const pauseButton = document.querySelector('.pause-button');
 
+function resetInterval() {
+    clearInterval(intervalId);
+    intervalId = setInterval(nextImage, 4000);
+}
+
+nextButton.addEventListener('click', () => {
+    nextImage();
+    resetInterval();
+});
+
+prevButton.addEventListener('click', () => {
+    previousImage();
+    resetInterval();
+});
+
+pauseButton.addEventListener('click', () => {
+    if (pausado) {
+        intervalId = setInterval(nextImage, 4000);
+        pauseButton.textContent = "Pausar";
+    } else {
+        clearInterval(intervalId);
+        pauseButton.textContent = "Continuar";
+    }
+    pausado = !pausado;
+});
